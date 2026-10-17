@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Event</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f4f8;
+        }
+
+        header {
+            background-color: #183b66;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #24558a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .container {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .event {
+            display: inline-block;
+            background: white;
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cccccc;
+        }
+
+        h2 {
+            color: #183b66;
+        }
+
+        button {
+            background-color: #1769aa;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #104d80;
+        }
+
+        footer {
+            background-color: #183b66;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Management Event</h1>
+        <p>Discover and Participate in College Events</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>Welcome Students!</h2>
+        <p>Explore upcoming college events and participate in activities.</p>
+    </div>
+
+    <div class="container" id="events">
+        <h2>Upcoming Events</h2>
+
+        <div class="event">
+            <h3>Web Development Workshop</h3>
+            <p>Date: 25 October 2026</p>
+            <p>Learn HTML and CSS basics.</p>
+            <button onclick="register('Web Development Workshop')">
+                Register
+            </button>
+        </div>
+
+        <div class="event">
+            <h3>Data Science Seminar</h3>
+            <p>Date: 30 October 2026</p>
+            <p>Explore AI and Machine Learning.</p>
+            <button onclick="register('Data Science Seminar')">
+                Register
+            </button>
+        </div>
+
+        <div class="event">
+            <h3>Project Presentation</h3>
+            <p>Date: 5 November 2026</p>
+            <p>Present your innovative ideas.</p>
+            <button onclick="register('Project Presentation')">
+                Register
+            </button>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>This website helps students explore college events
+           and register their interest in participating.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Student Management Event</p>
+    </footer>
+
+    <script>
+        function register(eventName) {
+            alert("You selected: " + eventName);
+        }
+    </script>
+
+</body>
+</html>
